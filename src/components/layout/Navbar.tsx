@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Our Services", href: "/services" },
-    { label: "About Us", href: "/about" },
+    { label: "Our Solutions", href: "/services" },
+    { label: "CDISC", href: "/cdisc" },
     { label: "Contact Us", href: "/contact" },
     { label: "Software", href: "/software" },
   ];
@@ -19,30 +19,31 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
-          {/* Increased height from h-16 to h-20 */}
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="StatClin Logo"
-                width={200} // Increased from 120
-                height={60} // Increased from 40
-                className="h-12 w-auto" // Increased from h-8
+                width={200}
+                height={60}
+                className="h-14 w-auto"
               />
             </Link>
           </div>
+
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-[#5ac3c6] px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#5ac3c6] px-3 py-2 rounded-md text-base font-medium transition-colors"
               >
                 {item.label}
               </Link>
             ))}
           </div>
+
           {/* Mobile menu button */}
           <div className="flex md:hidden">
             <button

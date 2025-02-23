@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -51,10 +52,10 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/about"
+                  href="/cdisc"
                   className="text-sm text-gray-300 hover:text-[#5ac3c6]"
                 >
-                  About Us
+                  CDISC
                 </Link>
               </li>
               <li>
@@ -77,7 +78,12 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <p className="text-sm text-gray-300">Email: info@statclin.com</p>
+            <div className="flex items-center text-gray-300 hover:text-[#5ac3c6] transition-colors">
+              <Mail size={18} className="mr-2" />
+              <a href="mailto:info@statclin.com" className="text-sm">
+                info@statclin.com
+              </a>
+            </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700">

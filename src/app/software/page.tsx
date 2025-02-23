@@ -49,7 +49,7 @@ export default function SoftwarePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#5ac3c6] via-[#4ba1a4] to-[#4a495f] text-white py-20">
+      <div className="bg-gradient-to-r bg-[#5ac3c6] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-6">
             Risk Based Quality Management Platform
